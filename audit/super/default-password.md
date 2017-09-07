@@ -9,7 +9,7 @@
 # /management/super/password
 ## POST - 管理员登录
 ### 可选参数形式
-type = root | fakeuser 
+type = fakeuser 
 
 #### 上传数据
 | 字段     | 类型   | 示例      | 说明     |
