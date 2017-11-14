@@ -17,7 +17,7 @@
 # /user
 ## GET - 获取用户信息
 ### 参数形式
-+ id = RUID
++ id = RUID (RefinedUUID)
 
 ### 上传数据
 无
