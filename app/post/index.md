@@ -1,21 +1,21 @@
 # 目录
 - [目录](#%E7%9B%AE%E5%BD%95)
-- [/dig](#dig)
-    - [GET - 获取一个dig信息](#get---%E8%8E%B7%E5%8F%96%E4%B8%80%E4%B8%AAdig%E4%BF%A1%E6%81%AF)
+- [/post](#post)
+    - [GET - 获取一个post信息](#get---%E8%8E%B7%E5%8F%96%E4%B8%80%E4%B8%AApost%E4%BF%A1%E6%81%AF)
         - [参数形式](#%E5%8F%82%E6%95%B0%E5%BD%A2%E5%BC%8F)
         - [上传数据](#%E4%B8%8A%E4%BC%A0%E6%95%B0%E6%8D%AE)
         - [返回数据](#%E8%BF%94%E5%9B%9E%E6%95%B0%E6%8D%AE)
-    - [POST - 发表一个新的dig](#post---%E5%8F%91%E8%A1%A8%E4%B8%80%E4%B8%AA%E6%96%B0%E7%9A%84dig)
+    - [POST - 发表一个新的post](#post---%E5%8F%91%E8%A1%A8%E4%B8%80%E4%B8%AA%E6%96%B0%E7%9A%84post)
         - [参数形式](#%E5%8F%82%E6%95%B0%E5%BD%A2%E5%BC%8F)
         - [上传数据](#%E4%B8%8A%E4%BC%A0%E6%95%B0%E6%8D%AE)
         - [返回数据](#%E8%BF%94%E5%9B%9E%E6%95%B0%E6%8D%AE)
-    - [DELETE - 删除一个dig](#delete---%E5%88%A0%E9%99%A4%E4%B8%80%E4%B8%AAdig)
+    - [DELETE - 删除一个post](#delete---%E5%88%A0%E9%99%A4%E4%B8%80%E4%B8%AApost)
         - [参数形式](#%E5%8F%82%E6%95%B0%E5%BD%A2%E5%BC%8F)
         - [上传数据](#%E4%B8%8A%E4%BC%A0%E6%95%B0%E6%8D%AE)
         - [返回数据](#%E8%BF%94%E5%9B%9E%E6%95%B0%E6%8D%AE)
 
-# /dig
-## GET - 获取一个dig信息
+# /post
+## GET - 获取一个post信息
 ### 参数形式
 + id = 123465789
 
@@ -25,25 +25,25 @@
 ### 返回数据
 | 字段    | 类型   | 示例  | 说明       |
 | ------- | ------ | ----- | ---------- |
-| errcode | Number | 0     | 操作错误码 |
-| dig     | Dig    | {...} | 返回的dig  |
+| errCode | Number | 0     | 操作错误码 |
+| post    | post   | {...} | 返回的post |
 
-## POST - 发表一个新的dig
+## POST - 发表一个新的post
 ### 参数形式
 无
 
 ### 上传数据
-| 字段    | 类型     | 示例                                      | 说明        |
-| ------- | -------- | ----------------------------------------- | ----------- |
-| content | String   | "你好，我是你爸爸"                        | dig内容     |
-| images  | String[] | ["http://image1.com","http://image2.com"] | dig中的配图 |
+| 字段    | 类型     | 示例                                      | 说明         |
+| ------- | -------- | ----------------------------------------- | ------------ |
+| content | String   | "你好，我是你爸爸"                        | post内容     |
+| images  | String[] | ["http://image1.com","http://image2.com"] | post中的配图 |
 
 ### 返回数据
 | 字段    | 类型   | 示例 | 说明       |
 | ------- | ------ | ---- | ---------- |
-| errcode | Number | 0    | 操作错误码 |
+| errCode | Number | 0    | 操作错误码 |
 
-## DELETE - 删除一个dig
+## DELETE - 删除一个post
 ### 参数形式
 + id = 123123123
 
@@ -53,4 +53,4 @@
 ### 返回数据
 | 字段    | 类型   | 示例 | 说明       |
 | ------- | ------ | ---- | ---------- |
-| errcode | Number | 0    | 操作错误码 |
+| errCode | Number | 0    | 操作错误码 |
